@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Validaçaõ de CPF</title>
+</head>
+
+<body>
+
+    <div class="formulario-pai">
+        <form>
+
+            <label for="">Digite um CPF</label>
+            <input type="text" id="cpf" placeholder="Ex: 482.346.644.11 ou 48234664411" oninput="ajustarCPF(this)">
+
+            <input onclick="validarCPF()" type="button" class="btn" value="Verificar" />
+            <p id="textoValidacaoCPF"></p>
+
+        </form>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: "Inter", serif;
+    font-style: normal;
+}
+
+.formulario-pai {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.formulario-pai form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    margin-top: 160px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+
+.formulario-pai #cpf {
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid grey;
+}
+
+.btn {
+    border: none;
+    margin-top: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: rgb(57, 168, 236);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.btn:hover {
+    background-color: rgb(55, 156, 219);
+    transition: ease-in-out;
+}
+
+#textoValidacaoCPF {
+    color: black;
+    text-align: center;
+}

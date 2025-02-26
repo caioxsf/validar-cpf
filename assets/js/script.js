@@ -1,4 +1,6 @@
-function validarCPF (cpf) {
+function validarCPF () {
+
+    let cpf = document.getElementById('cpf').value;
 
     let cpfLimpo = cpf.replace(/\D/g, "");
     let cpfNoveDigitos = cpfLimpo.match(/^\d{9}/)[0];
@@ -40,8 +42,23 @@ function validarCPF (cpf) {
     let cpfCompararArray = cpfLimpoComparar.split('');
 
 
-    if(cpfArray[9] == cpfCompararArray[9] && cpfArray[10] == cpfCompararArray[10])
-        return true
+    if(cpfArray[9] == cpfCompararArray[9] && cpfArray[10] == cpfCompararArray[10]) {
+        document.getElementById('textoValidacaoCPF').innerHTML = "CPF Válido"
+        return true 
+    } else {
+        document.getElementById('textoValidacaoCPF').innerHTML = "CPF Inválido"
+        return false
+    }
 
-    return false
 }
+
+function ajustarCPF(cpf) {
+    
+    let cpfInput = cpf.value.replace(/\D/g, "");
+    let cpfNoveDigitos = cpfInput.match(/^\d{11}/)[0];
+    let cpfFormatado = cpfNoveDigitos.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
+
+    cpf.value = cpfFormatado;
+}
+
+ajustarCPF("47182553848")
