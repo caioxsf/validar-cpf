@@ -3,22 +3,23 @@
 * {
     font-family: "Inter", serif;
     font-style: normal;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .formulario-pai {
     display: flex;
     justify-content: center;
-    
 }
 
 .formulario-pai form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 300px;
+    width: 400px;
     margin-top: 160px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    padding: 25px;
+    padding: 55px;
     border-radius: 5px;
 }
 
@@ -49,4 +50,13 @@
 #textoValidacaoCPF {
     color: black;
     text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(55, 156, 219);
+    padding: 10px;
 }
